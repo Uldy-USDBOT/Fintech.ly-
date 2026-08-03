@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Al-Khalij Investment Gateway - Premium fintech platform connecting Libya with Gulf markets. Secure, smart, and seamless investment solutions.">
+  <meta name="keywords" content="fintech, investment, gulf, libya, stocks, crypto, real estate, wealth management">
+  <title>Al-Khalij Gateway | Premium Investment Platform | fintech.ly</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300d4aa'/><text y='.9em' font-size='90' x='50' text-anchor='middle' fill='%23050a14'>⚡</text></svg>">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div class="loading-screen" id="loadingScreen">
+  <div class="loading-logo">⚡</div>
+  <div class="loading-bar"><div class="loading-bar-fill"></div></div>
+  <div class="loading-text" data-en="Loading Experience" data-ar="جاري التحميل">Loading Experience</div>
+</div>
+
+<!-- Ambient Background -->
+<div class="ambient-bg"></div>
+<div class="grid-pattern"></div>
+<div class="noise-overlay"></div>
+<div class="particles-container" id="particles"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu-overlay" id="mobileOverlay" onclick="toggleMobileMenu()"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+  <a href="invest.html" data-en="Invest Now" data-ar="استثمر الآن">Invest Now</a>
+  <a href="#features" onclick="toggleMobileMenu()" data-en="Services" data-ar="الخدمات">Services</a>
+  <a href="#trust" onclick="toggleMobileMenu()" data-en="About" data-ar="من نحن">About</a>
+  <a href="#contact" onclick="toggleMobileMenu()" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+  <div style="margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--border);">
+    <a href="https://wa.me/218918883918" target="_blank" style="background: linear-gradient(135deg, #25d366, #128c7e); color: white; text-align: center;" data-en="WhatsApp Support" data-ar="دعم واتساب">WhatsApp Support</a>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-brand">
+    <div class="nav-brand-icon">⚡</div>
+    <div class="nav-brand-text">
+      <span class="nav-brand-name" data-en="Al-Khalij Gateway" data-ar="بوابة الخليج">Al-Khalij Gateway</span>
+      <span class="nav-brand-domain">fintech.ly</span>
+    </div>
+  </a>
+
+  <div class="nav-links">
+    <a href="index.html" class="nav-link active" data-en="Home" data-ar="الرئيسية">Home</a>
+    <a href="invest.html" class="nav-link" data-en="Invest" data-ar="استثمر">Invest</a>
+    <a href="#features" class="nav-link" data-en="Services" data-ar="الخدمات">Services</a>
+    <a href="#trust" class="nav-link" data-en="About" data-ar="من نحن">About</a>
+    <a href="#contact" class="nav-link" data-en="Contact" data-ar="تواصل">Contact</a>
+  </div>
+
+  <div class="nav-actions">
+    <button class="btn-lang" onclick="toggleLanguage()">EN / عربي</button>
+    <a href="invest.html" class="btn-primary" data-en="Start Investing" data-ar="ابدأ الاستثمار">Start Investing</a>
+    <button class="mobile-toggle" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge reveal">
+      <span class="dot"></span>
+      <span data-en="Trusted by 10,000+ Investors" data-ar="موثوق من 10,000+ مستثمر">Trusted by 10,000+ Investors</span>
+    </div>
+
+    <h1 class="hero-title reveal reveal-delay-1">
+      <span data-en="Your Gateway to" data-ar="بوابتك نحو">Your Gateway to</span>
+      <span class="gradient-text" data-en="Gulf Investments" data-ar="استثمارات الخليج">Gulf Investments</span>
+    </h1>
+
+    <p class="hero-subtitle reveal reveal-delay-2" data-en="Secure, smart, and seamless financial solutions connecting Libya with Gulf markets. Build your wealth with institutional-grade technology." data-ar="حلول مالية آمنة وذكية وسلسة تربط ليبيا بأسواق الخليج. ابنِ ثروتك بتقنية على مستوى المؤسسات.">Secure, smart, and seamless financial solutions connecting Libya with Gulf markets. Build your wealth with institutional-grade technology.</p>
+
+    <div class="hero-actions reveal reveal-delay-3">
+      <a href="invest.html" class="btn-primary" data-en="Start Investing" data-ar="ابدأ الاستثمار">Start Investing</a>
+      <a href="#features" class="btn-outline" data-en="Explore Services" data-ar="استكشف الخدمات">Explore Services</a>
+    </div>
+
+    <div class="hero-stats-row reveal reveal-delay-4">
+      <div class="hero-stat">
+        <span class="hero-stat-value" data-count="500" data-suffix="M+" data-en="$500M+" data-ar="500M+ $">$0M+</span>
+        <span class="hero-stat-label" data-en="Assets Managed" data-ar="الأصول المدارة">Assets Managed</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-value" data-count="10" data-suffix="K+" data-en="10K+" data-ar="10K+">0K+</span>
+        <span class="hero-stat-label" data-en="Active Investors" data-ar="المستثمرين النشطين">Active Investors</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-value" data-count="15" data-suffix="+" data-en="15+" data-ar="15+">0+</span>
+        <span class="hero-stat-label" data-en="Gulf Partners" data-ar="شركاء الخليج">Gulf Partners</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual reveal reveal-delay-2">
+    <div class="hero-card-main">
+      <div class="card-header">
+        <div>
+          <div class="card-title" data-en="Portfolio Value" data-ar="قيمة المحفظة">Portfolio Value</div>
+          <div class="card-balance">$2,458,920</div>
+        </div>
+        <div class="card-badge">+24.5%</div>
+      </div>
+      <div class="card-chart">
+        <div class="card-chart-line"></div>
+      </div>
+      <div class="card-assets">
+        <div class="asset-item">
+          <div class="asset-label" data-en="Stocks" data-ar="الأسهم">Stocks</div>
+          <div class="asset-value">$890,400</div>
+        </div>
+        <div class="asset-item">
+          <div class="asset-label" data-en="Crypto" data-ar="العملات">Crypto</div>
+          <div class="asset-value up">+12.3%</div>
+        </div>
+        <div class="asset-item">
+          <div class="asset-label" data-en="Real Estate" data-ar="العقارات">Real Estate</div>
+          <div class="asset-value">$1,120,000</div>
+        </div>
+        <div class="asset-item">
+          <div class="asset-label" data-en="Bonds" data-ar="السندات">Bonds</div>
+          <div class="asset-value">$448,520</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="float-card float-card-1">
+      <div class="float-card-header">
+        <div class="float-card-icon green">📈</div>
+        <span class="float-card-text" data-en="Daily Profit" data-ar="الربح اليومي">Daily Profit</span>
+      </div>
+      <div class="float-card-amount">+$4,280</div>
+    </div>
+
+    <div class="float-card float-card-2">
+      <div class="float-card-header">
+        <div class="float-card-icon green">🎯</div>
+        <span class="float-card-text" data-en="Accuracy" data-ar="الدقة">Accuracy</span>
+      </div>
+      <div class="float-card-amount">98.7%</div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<section class="stats-section">
+  <div class="stats-container reveal">
+    <div class="stat-item">
+      <div class="stat-number" data-count="500" data-prefix="$" data-suffix="M+" data-en="$500M+" data-ar="500M+ $">$0M+</div>
+      <div class="stat-label" data-en="Assets Under Management" data-ar="الأصول تحت الإدارة">Assets Under Management</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-count="10" data-suffix="K+" data-en="10K+" data-ar="10K+">0K+</div>
+      <div class="stat-label" data-en="Active Investors" data-ar="المستثمرين النشطين">Active Investors</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-count="15" data-suffix="+" data-en="15+" data-ar="15+">0+</div>
+      <div class="stat-label" data-en="Gulf Financial Partners" data-ar="شركاء ماليون خليجيون">Gulf Financial Partners</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-count="99.9" data-suffix="%" data-en="99.9%" data-ar="99.9%">0%</div>
+      <div class="stat-label" data-en="Platform Uptime" data-ar="توافر المنصة">Platform Uptime</div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 Pillars / Features Section -->
+<section class="section" id="features">
+  <div class="section-header reveal">
+    <div class="section-label" data-en="Our Services" data-ar="خدماتنا">Our Services</div>
+    <h2 class="section-title" data-en="Five Pillars of <span class='highlight'>Wealth Creation</span>" data-ar="خمسة <span class='highlight'>ركائز</span> لبناء الثروة">Five Pillars of <span class="highlight">Wealth Creation</span></h2>
+    <p class="section-desc" data-en="Comprehensive financial services designed to maximize your returns and secure your financial future across Gulf markets." data-ar="خدمات مالية شاملة مصممة لتعظيم عوائدك وتأمين مستقبلك المالي عبر أسواق الخليج.">Comprehensive financial services designed to maximize your returns and secure your financial future across Gulf markets.</p>
+  </div>
+
+  <div class="features-grid">
+    <div class="feature-card reveal reveal-delay-1">
+      <div class="feature-icon-wrap">🏛️</div>
+      <h3 data-en="Gulf Stock Trading" data-ar="تداول أسهم الخليج">Gulf Stock Trading</h3>
+      <p data-en="Direct access to GCC stock markets including Saudi Tadawul, Dubai DFM, and Qatar Exchange with real-time execution and zero hidden fees." data-ar="وصول مباشر إلى أسواق الأسهم الخليجية بما في ذلك تداول السعودية ودبي المالي وبورصة قطر مع تنفيذ فوري وبدون رسوم خفية.">Direct access to GCC stock markets including Saudi Tadawul, Dubai DFM, and Qatar Exchange with real-time execution and zero hidden fees.</p>
+      <a href="invest.html" class="feature-link" data-en="Learn more →" data-ar="← اعرف المزيد">Learn more →</a>
+    </div>
+
+    <div class="feature-card reveal reveal-delay-2">
+      <div class="feature-icon-wrap">🏘️</div>
+      <h3 data-en="Real Estate Investment" data-ar="الاستثمار العقاري">Real Estate Investment</h3>
+      <p data-en="Premium property portfolios across Dubai, Riyadh, and Doha with fractional ownership starting from $1,000. Sharia-compliant options available." data-ar="محافظ عقارية متميزة عبر دبي والرياض والدوحة مع ملكية جزئية تبدأ من 1,000 دولار. خيارات متوافقة مع الشريعة متاحة.">Premium property portfolios across Dubai, Riyadh, and Doha with fractional ownership starting from $1,000. Sharia-compliant options available.</p>
+      <a href="invest.html" class="feature-link" data-en="Learn more →" data-ar="← اعرف المزيد">Learn more →</a>
+    </div>
+
+    <div class="feature-card reveal reveal-delay-3">
+      <div class="feature-icon-wrap">₿</div>
+      <h3 data-en="Digital Assets" data-ar="الأصول الرقمية">Digital Assets</h3>
+      <p data-en="Secure cryptocurrency and tokenized asset trading with institutional-grade custody, cold storage, and Sharia-compliant screening." data-ar="تداول آمن للعملات المشفرة والأصول المرمزة مع حفظ على مستوى مؤسسي وتخزين بارد وفحص متوافق مع الشريعة.">Secure cryptocurrency and tokenized asset trading with institutional-grade custody, cold storage, and Sharia-compliant screening.</p>
+      <a href="invest.html" class="feature-link" data-en="Learn more →" data-ar="← اعرف المزيد">Learn more →</a>
+    </div>
+
+    <div class="feature-card featured reveal reveal-delay-1">
+      <div class="feature-icon-wrap">🛡️</div>
+      <h3 data-en="Wealth Protection & Risk Management" data-ar="حماية الثروة وإدارة المخاطر">Wealth Protection & Risk Management</h3>
+      <p data-en="AI-powered risk management, comprehensive insurance products, and advanced hedging strategies to protect your investments from market volatility and geopolitical risks." data-ar="إدارة مخاطر مدعومة بالذكاء الاصطناعي ومنتجات تأمين شاملة واستراتيجيات تحوط متقدمة لحماية استثماراتك من تقلبات السوق والمخاطر الجيوسياسية.">AI-powered risk management, comprehensive insurance products, and advanced hedging strategies to protect your investments from market volatility and geopolitical risks.</p>
+      <a href="invest.html" class="feature-link" data-en="Learn more →" data-ar="← اعرف المزيد">Learn more →</a>
+    </div>
+
+    <div class="feature-card reveal reveal-delay-2">
+      <div class="feature-icon-wrap">📊</div>
+      <h3 data-en="Smart Portfolio Management" data-ar="إدارة المحفظة الذكية">Smart Portfolio Management</h3>
+      <p data-en="Automated rebalancing, AI-driven market insights, and personalized recommendations based on your unique risk profile and financial goals." data-ar="إعادة توازن آلي ورؤى سوقية مدفوعة بالذكاء الاصطناعي وتوصيات مخصصة بناءً على ملف مخاطرك وأهدافك المالية الفريدة.">Automated rebalancing, AI-driven market insights, and personalized recommendations based on your unique risk profile and financial goals.</p>
+      <a href="invest.html" class="feature-link" data-en="Learn more →" data-ar="← اعرف المزيد">Learn more →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Section -->
+<section class="section trust-section" id="trust">
+  <div class="trust-grid">
+    <div class="trust-visual reveal">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop" alt="Modern Financial Tower" class="trust-image" loading="lazy">
+      <div class="trust-image-overlay"></div>
+    </div>
+    <div class="trust-content reveal reveal-delay-1">
+      <div class="section-label" data-en="Why Choose Us" data-ar="لماذا تختارنا">Why Choose Us</div>
+      <h2 data-en="Built for <span class='highlight'>Serious Investors</span>" data-ar="مبني <span class='highlight'>للمستثمرين الجادين</span>">Built for <span class="highlight">Serious Investors</span></h2>
+      <p data-en="We combine cutting-edge technology with deep regional expertise to deliver investment solutions that meet the highest institutional standards." data-ar="نحن نجمع بين التقنية المتطورة والخبرة الإقليمية العميقة لتقديم حلول استثمارية تلبي أعلى المعايير المؤسسية.">We combine cutting-edge technology with deep regional expertise to deliver investment solutions that meet the highest institutional standards.</p>
+
+      <div class="trust-features">
+        <div class="trust-feature">
+          <div class="trust-feature-icon">🔒</div>
+          <div class="trust-feature-text">
+            <h4 data-en="Bank-Grade Security" data-ar="أمان على مستوى البنوك">Bank-Grade Security</h4>
+            <p data-en="256-bit encryption, biometric authentication, and cold storage for digital assets." data-ar="تشفير 256 بت، مصادقة بيومترية، وتخزين بارد للأصول الرقمية.">256-bit encryption, biometric authentication, and cold storage for digital assets.</p>
+          </div>
+        </div>
+        <div class="trust-feature">
+          <div class="trust-feature-icon">⚡</div>
+          <div class="trust-feature-text">
+            <h4 data-en="Real-Time Execution" data-ar="تنفيذ فوري">Real-Time Execution</h4>
+            <p data-en="Sub-millisecond order execution across all Gulf exchanges with 99.99% reliability." data-ar="تنفيذ أوامر أقل من الميلي ثانية عبر جميع بورصات الخليج مع موثوقية 99.99%.">Sub-millisecond order execution across all Gulf exchanges with 99.99% reliability.</p>
+          </div>
+        </div>
+        <div class="trust-feature">
+          <div class="trust-feature-icon">🌍</div>
+          <div class="trust-feature-text">
+            <h4 data-en="Regional Expertise" data-ar="خبرة إقليمية">Regional Expertise</h4>
+            <p data-en="Deep understanding of GCC markets, regulations, and cultural nuances for optimal returns." data-ar="فهم عميق لأسواق دول مجلس التعاون الخليجي واللوائح والفروق الثقافية لتحقيق أفضل العوائد.">Deep understanding of GCC markets, regulations, and cultural nuances for optimal returns.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section contact-section" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="section-label" data-en="Get In Touch" data-ar="تواصل معنا">Get In Touch</div>
+      <h2 data-en="Let's Build Your <span class='highlight'>Financial Future</span>" data-ar="لنبني <span class='highlight'>مستقبلك المالي</span>">Let's Build Your <span class="highlight">Financial Future</span></h2>
+      <p data-en="Ready to start your investment journey? Our team of certified financial advisors is available 24/7 to guide you through every step." data-ar="مستعد لبدء رحلة استثمارك؟ فريقنا من المستشارين الماليين المعتمدين متاح على مدار الساعة لتوجيهك في كل خطوة.">Ready to start your investment journey? Our team of certified financial advisors is available 24/7 to guide you through every step.</p>
+
+      <a href="https://wa.me/218918883918" target="_blank" class="contact-method">
+        <div class="contact-method-icon">📱</div>
+        <div class="contact-method-text">
+          <strong data-en="WhatsApp" data-ar="واتساب">WhatsApp</strong>
+          <span>+218 91 888 3918</span>
+        </div>
+      </a>
+
+      <a href="mailto:invest@fintech.ly" class="contact-method">
+        <div class="contact-method-icon">📧</div>
+        <div class="contact-method-text">
+          <strong data-en="Email" data-ar="البريد الإلكتروني">Email</strong>
+          <span>invest@fintech.ly</span>
+        </div>
+      </a>
+
+      <div class="contact-method" style="cursor: default;">
+        <div class="contact-method-icon">🌐</div>
+        <div class="contact-method-text">
+          <strong data-en="Website" data-ar="الموقع الإلكتروني">Website</strong>
+          <span>fintech.ly</span>
+        </div>
+      </div>
+
+      <a href="https://wa.me/218918883918" target="_blank" class="contact-whatsapp">
+        💬 <span data-en="Chat on WhatsApp" data-ar="دردشة على واتساب">Chat on WhatsApp</span>
+      </a>
+    </div>
+
+    <div class="contact-form-card reveal reveal-delay-1">
+      <h3 data-en="Quick Inquiry" data-ar="استفسار سريع">Quick Inquiry</h3>
+      <form id="contactForm" onsubmit="handleContactSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label data-en="Full Name" data-ar="الاسم الكامل">Full Name</label>
+            <input type="text" required placeholder="John Doe / محمد أحمد">
+          </div>
+          <div class="form-group">
+            <label data-en="Phone" data-ar="الهاتف">Phone</label>
+            <input type="tel" placeholder="+218 91 888 3918">
+          </div>
+        </div>
+        <div class="form-group full">
+          <label data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+          <input type="email" required placeholder="name@example.com">
+        </div>
+        <div class="form-group full">
+          <label data-en="Message" data-ar="الرسالة">Message</label>
+          <textarea placeholder="Tell us about your investment goals... / أخبرنا عن أهدافك الاستثمارية..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-brand-icon">⚡</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-name" data-en="Al-Khalij Gateway" data-ar="بوابة الخليج">Al-Khalij Gateway</span>
+          <span class="nav-brand-domain">fintech.ly</span>
+        </div>
+      </a>
+      <p data-en="Premium investment platform connecting Libya with Gulf financial markets. Secure, smart, and seamless wealth management." data-ar="منصة استثمارية متميزة تربط ليبيا بأسواق الخليج المالية. إدارة ثروات آمنة وذكية وسلسة.">Premium investment platform connecting Libya with Gulf financial markets. Secure, smart, and seamless wealth management.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4 data-en="Services" data-ar="الخدمات">Services</h4>
+      <ul>
+        <li><a href="invest.html" data-en="Stock Trading" data-ar="تداول الأسهم">Stock Trading</a></li>
+        <li><a href="invest.html" data-en="Real Estate" data-ar="العقارات">Real Estate</a></li>
+        <li><a href="invest.html" data-en="Digital Assets" data-ar="الأصول الرقمية">Digital Assets</a></li>
+        <li><a href="invest.html" data-en="Wealth Protection" data-ar="حماية الثروة">Wealth Protection</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4 data-en="Company" data-ar="الشركة">Company</h4>
+      <ul>
+        <li><a href="#trust" data-en="About Us" data-ar="من نحن">About Us</a></li>
+        <li><a href="#" data-en="Careers" data-ar="الوظائف">Careers</a></li>
+        <li><a href="#" data-en="Press" data-ar="الصحافة">Press</a></li>
+        <li><a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4 data-en="Legal" data-ar="قانوني">Legal</h4>
+      <ul>
+        <li><a href="#" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a></li>
+        <li><a href="#" data-en="Terms of Service" data-ar="شروط الخدمة">Terms of Service</a></li>
+        <li><a href="#" data-en="Security" data-ar="الأمان">Security</a></li>
+        <li><a href="#" data-en="Compliance" data-ar="الامتثال">Compliance</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p data-en="© 2026 Al-Khalij Investment Gateway. All rights reserved." data-ar="© 2026 بوابة الاستثمارات الخليج. جميع الحقوق محفوظة.">© 2026 Al-Khalij Investment Gateway. All rights reserved.</p>
+    <div class="footer-social">
+      <a href="#" aria-label="Twitter">𝕏</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="#" aria-label="Instagram">📷</a>
+      <a href="https://wa.me/218918883918" aria-label="WhatsApp">💬</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Success Modal -->
+<div class="modal-overlay" id="successModal">
+  <div class="modal">
+    <div class="modal-icon">✓</div>
+    <h3 data-en="Message Sent!" data-ar="تم إرسال الرسالة!">Message Sent!</h3>
+    <p data-en="Our investment team will contact you within 24 hours via WhatsApp or email." data-ar="سيتواصل معك فريق الاستثمار خلال 24 ساعة عبر واتساب أو البريد الإلكتروني.">Our investment team will contact you within 24 hours via WhatsApp or email.</p>
+    <button class="modal-btn" onclick="closeModal()" data-en="Excellent" data-ar="ممتاز">Excellent</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
